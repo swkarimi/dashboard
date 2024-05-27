@@ -9,6 +9,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scrollbar-width: thin;
+}
+
 html,
 body {
   direction: rtl;

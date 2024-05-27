@@ -1,6 +1,7 @@
 import { BarChart } from "@/components/BarChart"
 import { Header } from "@/components/Header"
 import { Cards } from "@/components/cards/Cards"
+import { RecentOrders } from "@/components/orders/RecentOrders"
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         <div className="md:col-span-2">
           <BarChart title="فروش انبار دو" data={[34, 21, 56, 12, 67, 82, 51]} />
         </div>
-        <div className="border">2</div>
+        <RecentOrders />
       </div>
     </main>
   )
