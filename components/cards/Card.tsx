@@ -40,7 +40,7 @@ export const Card: FC<CardProps> = ({ amount, title, percentage }) => {
           classNameNumber="font-bold"
           classNameUnit="text-xs"
         />
-        <p className="text-gray-600">{title}</p>
+        <p className="text-gray-600 text-sm">{title}</p>
       </div>
     </div>
   )
