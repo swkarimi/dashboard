@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import { Sidebar } from "@/components/sidebar/Sidebar"
+import { sahelFont } from "@/public/fonts/font"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fa-IR">
-      <body>
+    <html lang="fa-IR" dir="rtl">
+      <body className={sahelFont.className}>
         <Sidebar>{children}</Sidebar>
       </body>
     </html>
