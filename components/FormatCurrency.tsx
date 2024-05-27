@@ -2,21 +2,21 @@ import { formatPersianNumber } from "@/lib/format"
 import { FC } from "react"
 
 type FormatCurrencyProps = {
-  number: number
+  amount: number
   className?: string
   classNameNumber?: string
   classNameUnit?: string
 }
 
 export const FormatCurrency: FC<FormatCurrencyProps> = ({
-  number,
+  amount,
   className,
   classNameNumber,
   classNameUnit,
 }) => {
   return (
     <span className={className}>
-      <span className={classNameNumber}>{formatPersianNumber(number)}</span>
+      <span className={classNameNumber}>{formatPersianNumber(amount)}</span>
       <span className={classNameUnit}>تومان</span>
     </span>
   )

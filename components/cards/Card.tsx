@@ -35,7 +35,7 @@ export const Card: FC<CardProps> = ({ amount, title, percentage }) => {
       </p>
       <div className="flex flex-col gap-1 items-end pb-4">
         <FormatCurrency
-          number={amount}
+          amount={amount}
           className="flex items-center gap-[1px]"
           classNameNumber="font-bold"
           classNameUnit="text-xs"
