@@ -1,8 +1,16 @@
+@font-face {
+  font-family: sahel;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../public/fonts/Sahel.ttf") format("truetype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-    direction: rtl;
-    text-align: right;
+html,
+body {
+  direction: rtl;
+  text-align: right;
 }
