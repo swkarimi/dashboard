@@ -38,10 +38,8 @@ export const BarChart: FC<BarChartProps> = ({ title, data }) => {
   }, [])
 
   return (
-    <>
-      <div className="w-full relative lg:h-[65vh] h-[50vh] m-auto p-4 border rounded-lg bg-white">
-        <Bar data={chartData} options={chartOprions} />
-      </div>
-    </>
+    <div className="w-full h-[50vh] lg:h-[65vh] relative m-auto p-4 border rounded-lg bg-white z-0">
+      <Bar data={chartData} options={chartOprions} />
+    </div>
   )
 }
