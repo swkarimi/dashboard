@@ -36,8 +36,7 @@ export const Card: FC<CardProps> = ({ amount, title, percentage }) => {
       <div className="flex flex-col gap-1 items-end pb-4">
         <FormatCurrency
           amount={amount}
-          className="flex items-center gap-[1px]"
-          classNameNumber="font-bold"
+          classNameNumber="font-bold me-1"
           classNameUnit="text-xs"
         />
         <p className="text-gray-600 text-sm">{title}</p>
