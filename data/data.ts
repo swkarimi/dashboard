@@ -1,27 +1,4 @@
-enum STATUS {
-  onHold = "onHold",
-  processing = "processing",
-  completed = "completed",
-}
-
-enum BANK {
-  meli = "meli",
-  mellat = "mellat",
-  tejarat = "tejarat",
-  saderat = "saderat",
-}
-
-type OrderType = {
-  id: number
-  name: {
-    first: string
-    last: string
-  }
-  amount: number
-  status: STATUS
-  bank: BANK
-  date: Date
-}
+import { BANK, OrderType, STATUS, TabType } from "@/type/type"
 
 export const data: OrderType[] = [
   {
@@ -175,5 +152,32 @@ export const data: OrderType[] = [
     date: new Date(
       Date.now() - 1000 * 60 * 60 * Math.floor(Math.random() * 6 + 48)
     ),
+  },
+]
+
+export const tabsData: TabType[] = [
+  {
+    id: "caoiwempao",
+    header: "انبار یک",
+    title: "فروش انبار یک",
+    data: [34, 21, 56, 12, 67, 82, 51],
+  },
+  {
+    id: "smdhfaldfh",
+    header: "انبار دو",
+    title: "فروش انبار دو",
+    data: [25, 65, 42, 31, 24, 52, 41],
+  },
+  {
+    id: "pmkjhaksjd",
+    header: "انبار سه",
+    title: "فروش انبار سه",
+    data: [12, 21, 42, 12, 58, 62, 71],
+  },
+  {
+    id: "oajffkeelq",
+    header: "انبار چهار",
+    title: "فروش انبار چهار",
+    data: [25, 65, 12, 14, 45, 35, 52],
   },
 ]
