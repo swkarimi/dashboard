@@ -1,9 +1,8 @@
-import React, { FC } from "react"
+import type { FC } from "react"
 import { FaShoppingBag } from "react-icons/fa"
 import { FormatCurrency } from "../FormatCurrency"
-import { formatPersianDate, formatPersianNumber } from "@/lib/format"
+import {  formatPersianNumber } from "@/lib/format"
 import { dateAgo } from "@/lib/date"
-import { Span } from "next/dist/trace"
 
 type OrderType = {
   name: string
@@ -34,10 +33,10 @@ export const Order: FC<OrderType> = ({ name, amount, date }) => {
   return (
     <li className="bg-gray-50 hover:bg-gray-100 rounded-lg my-3 mx-4 p-2 flex items-center justify-between cursor-pointer">
       <div className="flex flex-row items-center justify-start">
-        <div className="bg-purple-100 rounded-lg p-3">
+        <div className="bg-purple-100 rounded-lg p-3 me-2 hidden sm:block md:hidden lg:block">
           <FaShoppingBag className="text-purple-800" />
         </div>
-        <div className="ps-4">
+        <div>
           <p className="text-gray-800">
             <FormatCurrency
               amount={amount}
@@ -48,7 +47,9 @@ export const Order: FC<OrderType> = ({ name, amount, date }) => {
           <p className="text-gray-400 text-xs">{name}</p>
         </div>
       </div>
-      <p className="text-sm md:text-xs lg:text-sm flex flex-row md:flex-col lg:flex-row gap-x-1 items-center">{dateStrAgo}</p>
+      <p className="text-sm md:text-xs lg:text-sm flex flex-col sm:flex-row md:flex-col lg:flex-row gap-x-1 items-center">
+        {dateStrAgo}
+      </p>
     </li>
   )
 }
