@@ -1,7 +1,8 @@
-import { BarChart } from "@/components/BarChart"
 import { Header } from "@/components/Header"
+import { TabSwitcher } from "@/components/TabSwitcher"
 import { Cards } from "@/components/cards/Cards"
 import { RecentOrders } from "@/components/orders/RecentOrders"
+import { tabsData } from "@/data/data"
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       <Cards />
       <div className="p-4 grid md:grid-cols-3 gap-4">
         <div className="md:col-span-2">
-          <BarChart title="فروش انبار دو" data={[34, 21, 56, 12, 67, 82, 51]} />
+          <TabSwitcher tabs={tabsData} />
         </div>
         <RecentOrders />
       </div>

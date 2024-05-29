@@ -22,6 +22,7 @@ export const chartDataDefault: ChartData<"bar"> = {
 
 export const chartOptionsDefault: ChartOptions<"bar"> = {
   responsive: true,
+  maintainAspectRatio: false,
   plugins: {
     legend: {
       position: "top",
