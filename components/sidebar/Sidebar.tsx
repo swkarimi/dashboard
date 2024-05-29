@@ -1,18 +1,13 @@
 "use client"
 
-import { FC, ReactNode } from "react"
+import { FC } from "react"
 import { FiSettings } from "react-icons/fi"
 import { HiOutlineShoppingBag } from "react-icons/hi"
 import { RxDashboard, RxPerson, RxSketchLogo } from "react-icons/rx"
 import { SidebarLink } from "./SidebarLink"
 
-type SidebarProps = {
-  children: ReactNode
-}
-
-export const Sidebar: FC<SidebarProps> = ({ children }) => {
+export const Sidebar: FC = () => {
   return (
-    <div className="flex">
       <div className="fixed w-20 h-screen p-4 bg-white border-e flex flex-col justify-between">
         <div className="flex flex-col items-center">
           <SidebarLink
@@ -30,7 +25,5 @@ export const Sidebar: FC<SidebarProps> = ({ children }) => {
           <SidebarLink href="/" icon={<FiSettings size={20} />} />
         </div>
       </div>
-      <main className="ms-20 w-full">{children}</main>
-    </div>
   )
 }
