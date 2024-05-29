@@ -23,6 +23,9 @@ export const chartDataDefault: ChartData<"bar"> = {
 export const chartOptionsDefault: ChartOptions<"bar"> = {
   responsive: true,
   maintainAspectRatio: false,
+  animation: {
+    duration: 1000,
+  },
   plugins: {
     legend: {
       position: "top",
