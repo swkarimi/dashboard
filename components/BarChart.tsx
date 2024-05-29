@@ -29,17 +29,19 @@ export const BarChart: FC<BarChartProps> = ({ title, data }) => {
   })
   const [chartOprions, setChartOprions] = useState<ChartOptions<"bar">>({})
 
-  chartOptionsDefault.plugins!.title!.text! = title
-  chartDataDefault.datasets[0].data = data
+  console.log("chartOprions", chartOprions)
 
   useEffect(() => {
+    chartOptionsDefault.plugins!.title!.text! = title
+    chartDataDefault.datasets[0].data = data
+
     setChartData(chartDataDefault)
     setChartOprions(chartOptionsDefault)
-  }, [])
+  }, [data, title])
 
   return (
-    <div className="relative z-0 h-[calc(50vh-72px)] lg:h-[calc(65vh-72px)] w-full">
-      <Bar data={chartData} options={chartOprions} className="w-full" />
+    <div className="w-full h-[calc(50vh-72px)] lg:h-[calc(65vh-72px)] ">
+      <Bar key={Math.random()} data={chartData} options={chartOprions} />
     </div>
   )
 }
