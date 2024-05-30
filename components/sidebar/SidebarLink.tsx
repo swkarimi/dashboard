@@ -20,7 +20,7 @@ export const SidebarLink: FC<SidebarLinkProps> = ({ href, icon, disable }) => {
         <Link
           href={href}
           className={cn(
-            "my-4 p-3 rounded-lg block",
+            "my-3 sm:my-4 p-1 sm:p-2 rounded-lg block",
             {
               "bg-purple-800 text-white cursor-pointer": pathname === href,
             },
@@ -35,7 +35,7 @@ export const SidebarLink: FC<SidebarLinkProps> = ({ href, icon, disable }) => {
       ) : (
         <div
           className={
-            "my-4 p-3 rounded-lg bg-gray-100 text-gray-400 cursor-not-allowed"
+            "my-3 sm:my-4 p-1 sm:p-2 rounded-lg bg-gray-100 text-gray-400 cursor-not-allowed"
           }
         >
           {icon}

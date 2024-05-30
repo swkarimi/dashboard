@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="fa-IR" dir="rtl">
       <body className={sahelFont.className}>
         <Sidebar />
-        <main className="ms-20 bg-gray-100 min-h-screen">{children}</main>
+        <main className="ms-14 sm:ms-20 bg-gray-100 min-h-screen">{children}</main>
       </body>
     </html>
   )

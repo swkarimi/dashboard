@@ -4,7 +4,7 @@ import { Cards } from "@/components/cards/Cards"
 import { RecentOrders } from "@/components/orders/RecentOrders"
 import { tabsData } from "@/data/data"
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Header title="داشبورد" name="محمد" />
