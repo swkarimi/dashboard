@@ -4,8 +4,8 @@ export enum STATUS {
   completed = "completed",
 }
 
-export enum BANK {
-  meli = "meli",
+export enum BANKNAME {
+  melli = "melli",
   mellat = "mellat",
   tejarat = "tejarat",
   saderat = "saderat",
@@ -17,9 +17,10 @@ export type OrderType = {
     first: string
     last: string
   }
+  email:string
   amount: number
   status: STATUS
-  bank: BANK
+  bank: BANKNAME
   date: Date
 }
 
