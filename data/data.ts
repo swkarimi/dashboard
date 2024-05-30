@@ -1,4 +1,4 @@
-import { BANK, OrderType, STATUS, TabType } from "@/type/type"
+import { BANKNAME, OrderType, STATUS, TabType } from "@/type/type"
 
 export const data: OrderType[] = [
   {
@@ -7,9 +7,10 @@ export const data: OrderType[] = [
       first: "نادر",
       last: "ابراهیمی",
     },
+    email: "nader@gmail.com",
     amount: 56700,
     status: STATUS.onHold,
-    bank: BANK.meli,
+    bank: BANKNAME.melli,
     date: new Date(Date.now() - 10000),
   },
   {
@@ -18,9 +19,10 @@ export const data: OrderType[] = [
       first: "کمال",
       last: "محمودی",
     },
+    email: "kamal@gmail.com",
     amount: 174000,
     status: STATUS.onHold,
-    bank: BANK.mellat,
+    bank: BANKNAME.mellat,
     date: new Date(Date.now() - 1000 * 60 * Math.floor(Math.random() * 10 + 0)),
   },
   {
@@ -29,9 +31,10 @@ export const data: OrderType[] = [
       first: "سارا",
       last: "کنعانی",
     },
+    email: "sara@yahoo.com",
     amount: 65800,
     status: STATUS.processing,
-    bank: BANK.tejarat,
+    bank: BANKNAME.tejarat,
     date: new Date(
       Date.now() - 1000 * 60 * Math.floor(Math.random() * 50 + 10)
     ),
@@ -42,9 +45,10 @@ export const data: OrderType[] = [
       first: "مهسا",
       last: "امیری",
     },
+    email: "mahsa@outlook.com",
     amount: 98500,
     status: STATUS.completed,
-    bank: BANK.saderat,
+    bank: BANKNAME.saderat,
     date: new Date(
       Date.now() - 1000 * 60 * 60 * Math.floor(Math.random() * 6 + 0)
     ),
@@ -55,9 +59,10 @@ export const data: OrderType[] = [
       first: "فریدون",
       last: "جوادی",
     },
+    email: "javadi@gmail.com",
     amount: 160500,
     status: STATUS.processing,
-    bank: BANK.meli,
+    bank: BANKNAME.melli,
     date: new Date(
       Date.now() - 1000 * 60 * 60 * Math.floor(Math.random() * 6 + 6)
     ),
@@ -68,9 +73,10 @@ export const data: OrderType[] = [
       first: "نیلوفر",
       last: "حسینی",
     },
+    email: "niloofar@gmail.com",
     amount: 271000,
     status: STATUS.processing,
-    bank: BANK.saderat,
+    bank: BANKNAME.saderat,
     date: new Date(
       Date.now() - 1000 * 60 * 60 * Math.floor(Math.random() * 6 + 12)
     ),
@@ -81,9 +87,10 @@ export const data: OrderType[] = [
       first: "کاظم",
       last: "کریمی",
     },
+    email: "kazem@yahoo.com",
     amount: 194500,
     status: STATUS.completed,
-    bank: BANK.tejarat,
+    bank: BANKNAME.tejarat,
     date: new Date(
       Date.now() - 1000 * 60 * 60 * Math.floor(Math.random() * 6 + 18)
     ),
@@ -94,9 +101,10 @@ export const data: OrderType[] = [
       first: "نازنین",
       last: "دهنوی",
     },
+    email: "nazanin@gmail.com",
     amount: 35400,
     status: STATUS.completed,
-    bank: BANK.saderat,
+    bank: BANKNAME.saderat,
     date: new Date(
       Date.now() - 1000 * 60 * 60 * Math.floor(Math.random() * 6 + 24)
     ),
@@ -107,9 +115,10 @@ export const data: OrderType[] = [
       first: "موسی",
       last: "مهدوی",
     },
+    email: "moosa@yahoo.com",
     amount: 79900,
     status: STATUS.completed,
-    bank: BANK.mellat,
+    bank: BANKNAME.mellat,
     date: new Date(
       Date.now() - 1000 * 60 * 60 * Math.floor(Math.random() * 6 + 30)
     ),
@@ -120,9 +129,10 @@ export const data: OrderType[] = [
       first: "حسین",
       last: "جعفری",
     },
+    email: "hossein@gmail.com",
     amount: 128000,
     status: STATUS.completed,
-    bank: BANK.meli,
+    bank: BANKNAME.melli,
     date: new Date(
       Date.now() - 1000 * 60 * 60 * Math.floor(Math.random() * 6 + 36)
     ),
@@ -133,9 +143,10 @@ export const data: OrderType[] = [
       first: "مرتضی",
       last: "غریب",
     },
+    email: "qarib@gmail.com",
     amount: 242900,
     status: STATUS.completed,
-    bank: BANK.mellat,
+    bank: BANKNAME.mellat,
     date: new Date(
       Date.now() - 1000 * 60 * 60 * Math.floor(Math.random() * 6 + 42)
     ),
@@ -146,9 +157,10 @@ export const data: OrderType[] = [
       first: "یعقوب",
       last: "فردوسی",
     },
+    email: "yaghoob@gmail.com",
     amount: 359000,
     status: STATUS.completed,
-    bank: BANK.tejarat,
+    bank: BANKNAME.tejarat,
     date: new Date(
       Date.now() - 1000 * 60 * 60 * Math.floor(Math.random() * 6 + 48)
     ),
