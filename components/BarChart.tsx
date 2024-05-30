@@ -29,8 +29,6 @@ export const BarChart: FC<BarChartProps> = ({ title, data }) => {
   })
   const [chartOprions, setChartOprions] = useState<ChartOptions<"bar">>({})
 
-  console.log("chartOprions", chartOprions)
-
   useEffect(() => {
     chartOptionsDefault.plugins!.title!.text! = title
     chartDataDefault.datasets[0].data = data
