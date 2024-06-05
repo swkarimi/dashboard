@@ -22,7 +22,7 @@ export const StatusCell: FC<StatusCellProps> = ({ status }) => {
 }
 
 export const status_details = {
-  [STATUS.completed]: { id: STATUS.completed, nameFa: "انجام شده" },
-  [STATUS.onHold]: { id: STATUS.onHold, nameFa: "در حال انتظار" },
+  [STATUS.completed]: { id: STATUS.completed, nameFa: "تکمیل شده" },
+  [STATUS.onHold]: { id: STATUS.onHold, nameFa: "در صف انتظار" },
   [STATUS.processing]: { id: STATUS.processing, nameFa: "در حال پردازش" },
 }
