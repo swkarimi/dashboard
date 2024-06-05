@@ -4,7 +4,7 @@
 - [Next.js](https://nextjs.org/)
 - [React](https://react.dev/)
 - [Tailwindcss](https://tailwindcss.com/)
-- [chart.js](https://www.chartjs.org/)
+- [Chart.js](https://www.chartjs.org/)
 
 ## Getting Started
 
