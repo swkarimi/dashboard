@@ -1,4 +1,5 @@
-Custom **dashboard** by
+## Built custom responsive dashboard by
+
 - [Typescript](https://www.typescriptlang.org/)
 - [Next.js](https://nextjs.org/)
 - [React](https://react.dev/)
